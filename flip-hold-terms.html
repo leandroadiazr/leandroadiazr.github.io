@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Flip &amp; Hold Analyzer – Terms of Use</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Terms of Use for the Flip &amp; Hold Analyzer mobile application." />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --bg-alt: #111827;
+      --card: #020617;
+      --accent: #10b981;
+      --accent-soft: rgba(16, 185, 129, 0.1);
+      --fg: #e5e7eb;
+      --fg-muted: #9ca3af;
+      --border: rgba(148, 163, 184, 0.2);
+      --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.75);
+      --radius-lg: 18px;
+      --radius-pill: 999px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "San Francisco", "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top left, #1f2933 0, var(--bg) 45%);
+      color: var(--fg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 32px 16px 40px;
+    }
+
+    @media (min-width: 768px) {
+      .page {
+        align-items: center;
+        padding: 48px 24px 56px;
+      }
+    }
+
+    .shell {
+      width: 100%;
+      max-width: 880px;
+      background: radial-gradient(circle at top right, #1e293b 0, var(--bg-alt) 40%, var(--card) 100%);
+      border-radius: 28px;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid var(--border);
+      padding: 24px 18px 28px;
+      backdrop-filter: blur(18px);
+    }
+
+    @media (min-width: 768px) {
+      .shell {
+        padding: 32px 32px 40px;
+      }
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    @media (min-width: 640px) {
+      header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    .title-block {
+      max-width: 480px;
+    }
+
+    h1 {
+      margin: 0 0 4px;
+      font-size: 1.55rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #f9fafb;
+    }
+
+    .subtitle {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--fg-muted);
+    }
+
+    .pill {
+      align-self: flex-start;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: var(--radius-pill);
+      background: var(--accent-soft);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #a7f3d0;
+      margin-top: 8px;
+    }
+
+    .pill-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 6px rgba(16, 185, 129, 0.25);
+    }
+
+    main {
+      background: linear-gradient(to bottom right, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.96));
+      border-radius: var(--radius-lg);
+      padding: 18px 14px 20px;
+      border: 1px solid var(--border);
+    }
+
+    @media (min-width: 768px) {
+      main {
+        padding: 22px 24px 24px;
+      }
+    }
+
+    h2 {
+      margin: 24px 0 8px;
+      font-size: 1.02rem;
+      color: #f9fafb;
+    }
+
+    h2:first-of-type {
+      margin-top: 8px;
+    }
+
+    p {
+      margin: 0 0 10px;
+      font-size: 0.92rem;
+      line-height: 1.55;
+      color: var(--fg-muted);
+    }
+
+    ul {
+      margin: 0 0 10px 1.1rem;
+      padding: 0;
+      color: var(--fg-muted);
+    }
+
+    ul li {
+      margin: 0 0 6px;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    strong {
+      color: #e5e7eb;
+    }
+
+    a {
+      color: #6ee7b7;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-meta {
+      margin-top: 22px;
+      padding-top: 12px;
+      border-top: 1px dashed var(--border);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 0.8rem;
+      color: var(--fg-muted);
+    }
+
+    .footer-meta span.label {
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.72rem;
+      color: #6b7280;
+    }
+
+    .app-name {
+      font-weight: 600;
+      color: #e5e7eb;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="shell">
+      <header>
+        <div class="title-block">
+          <h1>Terms of Use</h1>
+          <p class="subtitle">
+            These Terms of Use govern your access to and use of the
+            <span class="app-name">Flip &amp; Hold Analyzer</span> mobile application.
+          </p>
+          <div class="pill">
+            <span class="pill-dot"></span>
+            <span>Last updated: March 1, 2026</span>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <h2>1. Acceptance of Terms</h2>
+        <p>
+          By downloading, installing, accessing, or using the
+          <span class="app-name">Flip &amp; Hold Analyzer</span> app (the
+          &ldquo;App&rdquo;), you agree to be bound by these Terms of Use (the
+          &ldquo;Terms&rdquo;). If you do not agree to these Terms, you must not
+          use the App.
+        </p>
+
+        <h2>2. Who We Are</h2>
+        <p>
+          The App is operated by or on behalf of
+          <strong>Sunset Canyon LLC</strong> (referred to as &ldquo;we,&rdquo;
+          &ldquo;us,&rdquo; or &ldquo;our&rdquo;). For questions about these Terms,
+          you can contact us at:
+        </p>
+        <p>
+          Email:
+          <a href="mailto:fliphold.support@gmail.com">fliphold.support@gmail.com</a>
+        </p>
+
+        <h2>3. Eligibility &amp; Account Responsibility</h2>
+        <p>
+          You must be at least 18 years old or the age of majority in your
+          jurisdiction to use the App. You are responsible for maintaining the
+          security of your device and any authentication methods used to access
+          the App or related services (for example, your Apple ID).
+        </p>
+
+        <h2>4. License and Permitted Use</h2>
+        <p>
+          Subject to your compliance with these Terms, we grant you a limited,
+          non-exclusive, non-transferable, revocable license to install and use
+          the App on devices you own or control solely for your personal or
+          internal business purposes.
+        </p>
+        <p>You agree that you will not:</p>
+        <ul>
+          <li>Reverse engineer, decompile, or otherwise attempt to access the App&rsquo;s source code;</li>
+          <li>Use the App to build a competing product or service;</li>
+          <li>Use the App in any unlawful manner or for any unlawful purpose;</li>
+          <li>Circumvent or attempt to bypass any subscription, feature gating, or security measures.</li>
+        </ul>
+
+        <h2>5. Subscriptions, Purchases &amp; Billing</h2>
+        <p>
+          The App may offer free and paid tiers (e.g., &ldquo;Pro&rdquo;) with
+          different feature sets. Paid subscriptions and in-app purchases are
+          processed through Apple&rsquo;s App Store using your Apple ID. All
+          pricing, billing, renewals, refunds, and cancellation policies are
+          governed by Apple&rsquo;s terms and conditions in addition to these
+          Terms.
+        </p>
+        <p>
+          By starting a subscription, you authorize Apple to charge the
+          applicable fees to your chosen payment method. You can manage or
+          cancel your subscription at any time through your Apple ID account
+          settings. We do not have access to your full payment information and
+          cannot directly modify or cancel your subscription on your behalf.
+        </p>
+
+        <h2>6. No Financial, Investment, or Legal Advice</h2>
+        <p>
+          The App is an <strong>analysis and modeling tool</strong> designed to
+          help you explore real estate investment scenarios. It does not provide
+          financial, investment, legal, tax, or accounting advice.
+        </p>
+        <p>
+          You understand and agree that:
+        </p>
+        <ul>
+          <li>All outputs, scores, projections, and suggestions are for informational and educational purposes only;</li>
+          <li>No result produced by the App should be interpreted as a recommendation to purchase, sell, or finance any specific property;</li>
+          <li>You are solely responsible for verifying any numbers and for making your own decisions;</li>
+          <li>You should consult with qualified professionals (e.g., a licensed financial advisor, real estate professional, CPA, or attorney) before making investment or financing decisions.</li>
+        </ul>
+
+        <h2>7. Data, Privacy &amp; Third-Party Services</h2>
+        <p>
+          The App may allow you to enter property details, deal assumptions, and
+          other information (&ldquo;User Data&rdquo;). You are responsible for
+          the accuracy of User Data you provide.
+        </p>
+        <p>
+          Our handling of data, including any analytics or remote configuration
+          services we use (for example, Firebase), is described in our
+          <a href="https://leandroadiazr.github.io/flip-hold-privacy" target="_blank" rel="noopener noreferrer">
+            Privacy Policy
+          </a>. By using the App, you also agree to that Privacy Policy.
+        </p>
+
+        <h2>8. AI &amp; Automation Features</h2>
+        <p>
+          Some features may leverage AI models or external automation services
+          to help analyze deals, summarize information, or generate projections.
+          AI outputs may be incomplete, outdated, or inaccurate, and should not
+          be relied upon as the sole basis for any decision.
+        </p>
+        <p>
+          You acknowledge that:
+        </p>
+        <ul>
+          <li>AI-generated content may contain errors or omissions;</li>
+          <li>You must independently verify all critical information;</li>
+          <li>We are not liable for decisions you make based on AI or automated outputs.</li>
+        </ul>
+
+        <h2>9. Modifications to the App or Terms</h2>
+        <p>
+          We may update the App, add or remove features, change available tiers,
+          or modify these Terms from time to time. When we make material
+          changes, we may update the &ldquo;Last updated&rdquo; date above and,
+          where appropriate, provide additional notice within the App.
+        </p>
+        <p>
+          Your continued use of the App after changes become effective
+          constitutes your acceptance of the updated Terms. If you do not agree
+          to the updated Terms, you must stop using the App.
+        </p>
+
+        <h2>10. Intellectual Property</h2>
+        <p>
+          All rights, title, and interest in and to the App—including its code,
+          design, text, graphics, logos, and underlying models—are owned by us
+          or our licensors and are protected by applicable intellectual
+          property laws. Except for the limited license granted to you in these
+          Terms, we reserve all rights in and to the App.
+        </p>
+
+        <h2>11. Disclaimer of Warranties</h2>
+        <p>
+          The App is provided on an <strong>&ldquo;AS IS&rdquo; and
+          &ldquo;AS AVAILABLE&rdquo;</strong> basis. To the fullest extent
+          permitted by law, we disclaim all warranties, express or implied,
+          including but not limited to warranties of merchantability, fitness
+          for a particular purpose, and non-infringement.
+        </p>
+        <p>
+          We do not guarantee that:
+        </p>
+        <ul>
+          <li>The App will be error-free or uninterrupted;</li>
+          <li>Any particular deal, score, or projection will perform as modeled;</li>
+          <li>The App will meet your specific expectations or investment goals.</li>
+        </ul>
+
+        <h2>12. Limitation of Liability</h2>
+        <p>
+          To the maximum extent permitted by law, in no event will we be liable
+          for any indirect, incidental, special, consequential, or punitive
+          damages, or for any loss of profits, revenues, data, or goodwill,
+          arising out of or in connection with your use of (or inability to use)
+          the App.
+        </p>
+        <p>
+          Our total aggregate liability for any claims relating to the App or
+          these Terms will not exceed the amount you have paid (if any) for
+          access to the Pro tier in the twelve (12) months preceding the event
+          giving rise to the claim.
+        </p>
+
+        <h2>13. Indemnification</h2>
+        <p>
+          You agree to indemnify, defend, and hold harmless Sunset Canyon LLC
+          and its owners, officers, employees, and agents from and against any
+          claims, liabilities, damages, losses, and expenses (including
+          reasonable attorneys&rsquo; fees) arising out of or in any way
+          connected with:
+        </p>
+        <ul>
+          <li>Your access to or use of the App;</li>
+          <li>Your violation of these Terms; or</li>
+          <li>Your violation of any applicable law or third-party rights.</li>
+        </ul>
+
+        <h2>14. Termination</h2>
+        <p>
+          We may suspend or terminate your access to the App at any time, with
+          or without notice, if we believe you have violated these Terms or are
+          using the App in a way that could cause harm to us, other users, or
+          third parties.
+        </p>
+        <p>
+          You may stop using the App at any time. Deleting the App from your
+          device does not automatically cancel any active subscriptions; you
+          must manage those through your Apple ID account settings.
+        </p>
+
+        <h2>15. Governing Law &amp; Dispute Resolution</h2>
+        <p>
+          These Terms are governed by and construed in accordance with the laws
+          of the State of Florida, without regard to its conflict of law
+          principles. Any dispute arising out of or relating to these Terms or
+          your use of the App will be brought exclusively in the state or
+          federal courts located in Florida, and you consent to the personal
+          jurisdiction of those courts.
+        </p>
+
+        <h2>16. Miscellaneous</h2>
+        <p>
+          If any provision of these Terms is held to be invalid or
+          unenforceable, that provision will be enforced to the maximum extent
+          permissible, and the remaining provisions will remain in full force
+          and effect.
+        </p>
+        <p>
+          Our failure to enforce any right or provision of these Terms will not
+          be deemed a waiver of such right or provision.
+        </p>
+
+        <div class="footer-meta">
+          <span class="label">App</span>
+          <span><span class="app-name">Flip &amp; Hold Analyzer</span></span>
+          <span class="label">Operator</span>
+          <span>Sunset Canyon LLC</span>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
