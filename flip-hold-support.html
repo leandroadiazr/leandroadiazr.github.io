@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Flip &amp; Hold Analyzer – Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Support page for the Flip &amp; Hold Analyzer mobile application." />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --bg-alt: #111827;
+      --card: #020617;
+      --accent: #10b981;
+      --accent-soft: rgba(16, 185, 129, 0.1);
+      --fg: #e5e7eb;
+      --fg-muted: #9ca3af;
+      --border: rgba(148, 163, 184, 0.2);
+      --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.75);
+      --radius-lg: 18px;
+      --radius-pill: 999px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "San Francisco", "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top left, #1f2933 0, var(--bg) 45%);
+      color: var(--fg);
+      -webkit-font-smoothing: antialiased;
+    }
+    .page {
+      min-height: 100vh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 32px 16px 40px;
+    }
+    @media (min-width: 768px) {
+      .page { align-items: center; padding: 48px 24px 56px; }
+    }
+    .shell {
+      width: 100%;
+      max-width: 880px;
+      background: radial-gradient(circle at top right, #1e293b 0, var(--bg-alt) 40%, var(--card) 100%);
+      border-radius: 28px;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid var(--border);
+      padding: 24px 18px 28px;
+      backdrop-filter: blur(18px);
+    }
+    @media (min-width: 768px) {
+      .shell { padding: 32px 32px 40px; }
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+    @media (min-width: 640px) {
+      header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+    .title-block { max-width: 480px; }
+    h1 {
+      margin: 0 0 4px;
+      font-size: 1.55rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #f9fafb;
+    }
+    .subtitle {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--fg-muted);
+    }
+    .pill {
+      align-self: flex-start;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: var(--radius-pill);
+      background: var(--accent-soft);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #a7f3d0;
+      margin-top: 8px;
+    }
+    .pill-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 6px rgba(16, 185, 129, 0.25);
+    }
+    main {
+      background: linear-gradient(to bottom right, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.96));
+      border-radius: var(--radius-lg);
+      padding: 18px 14px 20px;
+      border: 1px solid var(--border);
+    }
+    @media (min-width: 768px) {
+      main { padding: 22px 24px 24px; }
+    }
+    h2 {
+      margin: 24px 0 8px;
+      font-size: 1.02rem;
+      color: #f9fafb;
+    }
+    h2:first-of-type { margin-top: 8px; }
+    p {
+      margin: 0 0 10px;
+      font-size: 0.92rem;
+      line-height: 1.55;
+      color: var(--fg-muted);
+    }
+    a {
+      color: #6ee7b7;
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    .footer-meta {
+      margin-top: 22px;
+      padding-top: 12px;
+      border-top: 1px dashed var(--border);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 0.8rem;
+      color: var(--fg-muted);
+    }
+    .footer-meta span.label {
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.72rem;
+      color: #6b7280;
+    }
+    .app-name {
+      font-weight: 600;
+      color: #e5e7eb;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="shell">
+      <header>
+        <div class="title-block">
+          <h1>Support</h1>
+          <p class="subtitle">
+            Get help, report issues, or send feedback about Flip &amp; Hold Analyzer.
+          </p>
+          <div class="pill">
+            <span class="pill-dot"></span>
+            <span>Support Resources</span>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <h2>Contact Support</h2>
+        <p>
+          If you have questions, need help with a feature, or want to report a bug,
+          we’re here to help! The best way to reach us is by email:
+        </p>
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:fliphold.support@gmail.com">fliphold.support@gmail.com</a>
+        </p>
+
+        <h2>Helpful Resources</h2>
+        <p>
+          Before contacting support, you may find quick answers in the following:
+        </p>
+        <ul>
+          <li>
+            <strong>FAQ / Help Center:</strong>
+            answers to common questions about subscriptions, features, and troubleshooting.
+          </li>
+          <li>
+            <strong>Terms of Use:</strong>
+            <a href="https://leandroadiazr.github.io/flip-hold-terms" target="_blank" rel="noopener noreferrer">
+              https://leandroadiazr.github.io/flip-hold-terms
+            </a>
+          </li>
+          <li>
+            <strong>Privacy Policy:</strong>
+            <a href="https://leandroadiazr.github.io/flip-hold-privacy" target="_blank" rel="noopener noreferrer">
+              https://leandroadiazr.github.io/flip-hold-privacy
+            </a>
+          </li>
+        </ul>
+
+        <h2>Feedback &amp; Suggestions</h2>
+        <p>
+          We’re always looking to improve the app. If you have ideas for new
+          features or usability improvements, we’d love to hear from you!
+        </p>
+
+        <h2>Technical Issues</h2>
+        <p>
+          If you’re experiencing crashes, incorrect results, or problems
+          that prevent use of the app, please include:
+        </p>
+        <ul>
+          <li>Your device model and iOS version</li>
+          <li>A clear description of the problem</li>
+          <li>Steps to reproduce (if known)</li>
+        </ul>
+        <p>
+          This will help us resolve issues faster.
+        </p>
+
+        <div class="footer-meta">
+          <span class="label">App</span>
+          <span><span class="app-name">Flip &amp; Hold Analyzer</span></span>
+          <span class="label">Operator</span>
+          <span>Sunset Canyon LLC</span>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
